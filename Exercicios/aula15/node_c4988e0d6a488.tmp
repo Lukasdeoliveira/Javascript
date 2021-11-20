@@ -1,0 +1,15 @@
+var num = [5,7,4,6,3]
+var contador = 1
+
+num.sort()
+num.push(10)
+
+console.log(`Esses são os valores do vetor ${num}`)
+console.log(`O vetor tem ${num.length} elementos`)
+console.log(`O valor ${num[0]} está na position 0`)
+console.log(`O valor ${num[2]} está na posição 2`)
+
+while (num[0] <= 6){
+    console.log(`O valor do vetor é ${num}`)
+    contador +=1
+}

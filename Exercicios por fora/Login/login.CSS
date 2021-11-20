@@ -1,0 +1,51 @@
+body{
+    background-color: #34495e;
+    font-family: sans-serif;
+    //#191919
+}
+#login_box{
+    width: 300px;
+    border: solid black;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    
+}
+#login_name{
+    color: white;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+#username, #senha{
+    background: none;
+    border: 2px solid #3498db;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    outline: none;
+    display: block;
+    padding: 14px 10px;
+    color: white;
+    border-radius: 24px;
+    
+    
+}
+#botao{
+    background: none;
+    border: 2px solid #2ecc71;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    outline: none;
+    display: block;
+    padding: 14px 30px;
+    border-radius: 24px;
+
+}
+#botao:hover{
+    background: #2ecc71;
+}

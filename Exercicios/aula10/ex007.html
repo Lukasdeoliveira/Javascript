@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            margin-top: 150px;
+            text-align: center;
+            font: normal 10pt Arial;
+            background-color: blue;
+            color: white;
+
+        }
+        input{
+            font: normal 15pt Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 10px;
+
+        }
+        div#res_mult{
+            margin-top: 20px;
+        }
+        div#res_sub{
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Operadores</h1>
+
+    <!--Somador de valorees-->
+    <h2>Somando Valores</h2>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick = "somar()">
+    <div id="res">Resultado</div>
+
+    <!--Multiplicador de valores-->
+    <h2>Multiplicando Valores</h2>
+    <input type="number" name="mult1" id="mult1"> x
+    <input type="number" name="mult2" id="mult2">
+    <input type="button" value="Multiplicar" onclick = "multiplicar()">
+    <div id="res_mult">Resultado</div>
+
+    <!--Subtraindo os valores -->
+    <h2>Subtraindo Valores</h2>
+    <input type="number" name="sub1" id="sub1">
+    <input type="number" name="sub2" id="sub2">
+    <input type="button" value="Subtrair" onclick="subtrair()">
+    <!-- ID#res_sub = Resultado da subtração -->
+    <div id="res_sub">Resultado</div>
+
+    <script>sub2
+        function somar(){
+            var tn1 = document.querySelector("input#txtn1")
+            var tn2 = document.querySelector("input#txtn2")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var res = document.querySelector("div#res")
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+        function multiplicar(){
+            // m1 = Multiplicador1 e m2 = Multiplicador2
+            var m1 = document.querySelector("input#mult1")
+            var m2 = document.querySelector("input#mult2")
+            var n1 = Number(m1.value)
+            var n2 = Number(m2.value)
+            var res = document.querySelector("div#res_mult")
+            var s = n1 * n2
+            
+            res.innerHTML = `O número ${n1} Multiplicado pelo número ${n2} o resultado é <strong>${s}</strong>`
+
+
+        }
+        function subtrair(){
+            var sub1 = document.querySelector("input#sub1")
+            var sub2 = document.querySelector("input#sub2")
+            var n1 = Number(sub1.value)
+            var n2 = Number(sub2.value)
+            // S = Subtrair
+            var s = n1 - n2
+            // res = Resultado
+            var res = document.querySelector("div#res_sub")
+            res.innerHTML = `O número ${n1} Subtraido pelo número ${n2} o resultado é igual a <strong>${s}</strong>`
+
+        }
+    </script>
+</body>
+</html>

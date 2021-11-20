@@ -1,0 +1,166 @@
+Comandos iniciais do inicio da aula "CursoEmVideo JS"
+
+window.alert("")  = Mandar uma msg de alerta no site
+alerta
+
+window.confirm("")  = mandar uma msg de confirmação. Ok or Cancel
+confirmar
+
+window.prompt("")  = usuario escrever algo. Exmp: "Qual seu nome?"
+perguntar
+
+-------------------------------------------------------------
+Data Types
+
+number
+strig
+boolean
+null
+undefined
+object
+function
+
+------------------------------------------------------------
+typeof var = Qual o tipo primitivo da variavel
+--------------------------------------------------------------
++ = concatenação
+-------------------------------
+Transformar String > Number
+
+Number.parseInt(n) = Forçar a usar o numero inteiro
+Number.paserFloat(n) = Forçar a usar o numero real
+Number(n) = Deixar o programa escolher dependendo do valor digitado
+---------------------------------
+Transformar Number > String
+String(n)
+n.toString(n)
+--------------------------
+Formatando Strings
+
+var s = 'javascript'
+'Eu estou aprendendo s' // não faz interpolação
+'Eu estou aprendendo' + s // Concatenação
+`Eu estou aprendendo ${s} // usa template string
+
+` ` = CRASE
+
+s.length // quantos caracteres a string tem
+s.toUpperCase() // tudo para 'MAIÚSCULAS'
+s.toLowerCase() // tudo para 'minusculas'
+---------------------------------
+"Print" write
+write = escrever
+document.write(``) = (`escrever coisa na tela`) = escrever coisa na tela
+--------------------
+FIXED
+
+n1 = 1545.5
+n1.toFixed(2) = o n1 1545.5 vai ficar com duas casa = 1545.50
+n1.toFixed(2)replace('.', ',') = o n1 vai trocar o '.' pela ',' = 1545,50
+
+n1.toLocalesString('pt-BR', {style: 'currency', currency: 'BRL'})  =  converter o dinheiro para real, dola, euro, etc...
+BRL = Real
+USD = Dola
+EUR = Euro
+---------------------
+Lógicos
+
+! = Negação = Não
+&& = Conjunção = E   exmp: Me da uma caneta AZUL 'E' uma caneta VERMELHA
+|| - Disjunção = OU  exmp: Me da uma caneta AZUL 'OU' uma caneta VERMELHA
+
+----------------------
+DOM
+
+aula 9
+
+getElementById  = Verificar algo
+getElementsByTagName... etc 
+
+se tiver ''S'' no plural tem q especificar [] <
+
+var p1 = window.document.getElementsByTagName('p')[0]
+        document.write('Está escrito assim: ' + p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.innerText = "Olá!"
+        var b = window.document.body
+        
+        p1.style.color = "black" 
+
+        var teste = window.document.querySelector('div#msg')
+
+        teste.style.background = "black"
+
+innerText rescrever sobre
+-----------------------------------
+function
+aula 10
+
+function nome da funcão(){
+ (colocar algum valor para que a função fucione)
+}
+onclick = clicar
+onmouseenter = entrar
+onmouseout = sair
+-
+addEventListener = lista de aventos add
+
+addEventListener("click", clicar) = onclick = clicar em algo (div etc...)
+exmp:
+function clicar(){
+ variavel.innerText = "Olá!"  = Mudar o para "Olá" dps que algo for clicado
+}
+
+
+Chamada
+Parametros
+ação
+retorno
+
+//RECURSIVIDADE ~~ estudar depois, mais avançado
+
+-------------------
+input
+
+input:number 
+input:button = cria um botão
+----------------------------------------
+aula 12, exercicio 15
+
+img.setAttribute('id', 'foto') = Cria uma TAG img com o atributo de ID="foto"
+
+//Cria uma TAG IMG. Elemento img vai ser IMG
+var img = document.createElement("img") //
+
+appendChild(img) = adicionar um elemento (img)
+
+
+-----------------------------------------
+aula 15 vetores -
+
+obs: num é o nome da variavel que eu adicionei o vetor/array
+
+var/let = num, = [5,8,4] adicionar valores ao vetor/array
+
+num[3] = 6  faz com que o vetor NUM receba o valor 6 na posição 3
+
+num.push(7) faz com que o valor 7 seja adicionado na ultima posição do vetor
+
+num.length = Mostrar quantos elementos tem no vetor
+
+num.sort() = Colocar os valores em ordem crescente 
+
+num.indexOf(5) = Perguntar ao programa se tem o valor 5, caso tenha ele retornará o numero da sua posição no vetor
+exmp: vetor [5, 6, 4] num.indexOf(5) = 5 está na posição 0. obs (O de Of é maiusculo)
+
+OBS: Detalhe importante que descobri enquanto fazia testes: o método sort() não organiza na verdade o valor total do elemento, 
+mas sim a suas primeira casa decimal. 
+Por exemplo, numa distribuição de [10, 300, 40] o 300 apareceria antes do 40, mesmo sendo maior.
+Isso ocorre graças ao fato de que 3 é a primeira casa decimal de trezentos e 3 se encontra abaixo de 4 
+na escala crescente.
+
+-----------------------------------------
+
+
+
+

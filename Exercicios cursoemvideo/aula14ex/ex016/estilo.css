@@ -1,0 +1,38 @@
+body{
+    background: rgb(144, 144, 201);
+    font: normal 15pt Arial;
+
+
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+
+
+}
+
+footer{
+    text-align: center;
+    color: white;
+
+}
+#input_fim, #input_inicio, #input_passo{
+    margin-bottom: 5px;
+}
+#input_fim{
+    margin-left: 22px;
+}
+#input_inicio{
+    margin-left: 9px;
+}

@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bg-flores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+
+#facebook, #youtube, #instagram, #link{
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: rgba(132, 214, 196, 0.842);
+    background-color: rgb(28, 32, 53);
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+#facebook:hover, #youtube:hover, #instagram:hover, #link:hover{
+    background-color: rgba(142, 146, 148, 0.877);
+}
